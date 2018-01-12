@@ -1,0 +1,28 @@
+MODEL - VIEW - CONTROLLER (MVC)
+
+NOT a framework, but an architectural paradigm for programming (a way of thinking).
+
+Popular because it is used by a lot of frameworks (or implemented by):
+Rails; CakePHP; Django; iOS
+
+Ok, so what is it:
+M: Model
+	Adding and retrieving items from DB
+	Processing data from or to the DB
+	Speaks only w/ the Controller
+V: View
+	Only thing the user ever sees -- HTML/CSS
+	Speaks only w/ the Controller
+C: Controller
+	Processes GET/POST/PUT/DESTROY requests
+	All server-side logic
+	The Middle Man
+	Take info from user
+	Processes info & talks to the DB if needed
+	Receives info from DB
+	Speaks to View to explain presentation to the viewer
+Helps you to not repeat yourself
+Helps you structure your program
+
+Example flow:      
+Client (VIEW) <----> Server (CONTROLLER) <----> Database (MODEL)
